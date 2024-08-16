@@ -1,4 +1,4 @@
-# Práctica integradora Library
+# Ejercicio Library
 
 ## Objetivos
 * Implementar nuevas funciones de lógica de dominio
