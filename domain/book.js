@@ -1,10 +1,9 @@
 class Book {
-
   #title;
   #author;
   #pages;
-  #words;
-  
+  // #words;
+
   constructor(title, author, pages) {
     this.setTitle(title);
     this.setAuthor(author);
@@ -28,7 +27,7 @@ class Book {
   }
 
   setTitle(title) {
-    if (typeof (title) !== 'string') {
+    if (typeof title !== "string") {
       throw new Error();
     }
     title = title.trim();
@@ -39,8 +38,8 @@ class Book {
   }
 
   setAuthor(author) {
-    if (typeof (author) !== 'string') {
-      throw new Error()
+    if (typeof author !== "string") {
+      throw new Error();
     }
     author = author.trim();
     if (author.length === 0) {
@@ -50,11 +49,11 @@ class Book {
   }
 
   setPages(pages) {
-    if (typeof (pages) !== 'number' || isNaN(pages)) {
-      throw new Error()
+    if (typeof pages !== "number" || isNaN(pages)) {
+      throw new Error();
     }
     if (pages < 1) {
-      throw new Error()
+      throw new Error();
     }
     pages = Math.trunc(pages);
     this.#pages = pages;
