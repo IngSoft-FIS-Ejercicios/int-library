@@ -45,4 +45,3 @@
    - Campo 'Palabras' en el panel 'Nuevo libro'.
    - Mostrar 'Palabras totales' en el panel 'Biblioteca'.
 8. Subir un issue 'Parte C' con screenshot de la página en el navegador (paneles Biblioteca, Nuevo libro e Inventario).
-
