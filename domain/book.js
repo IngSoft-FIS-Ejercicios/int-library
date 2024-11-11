@@ -32,7 +32,7 @@ class Book {
     }
     title = title.trim();
     if (title.length === 0) {
-      throw new Error();
+      throw new Error("El libro debe tener título");
     }
     this.#title = title;
   }
@@ -50,10 +50,10 @@ class Book {
 
   setPages(pages) {
     if (typeof pages !== "number" || isNaN(pages)) {
-      throw new Error();
+      throw new Error("El libro debe tener al menos una página");
     }
     if (pages < 1) {
-      throw new Error();
+      throw new Error("El libro debe tener al menos una página");
     }
     pages = Math.trunc(pages);
     this.#pages = pages;
