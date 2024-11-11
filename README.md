@@ -4,7 +4,7 @@
 
 - Implementar nuevas funciones de lógica de dominio
 - Codificar test unitarios en paralelo a la implementación
-- Usar un linter para detectar problemas de codificacion
+- Usar buenas prácticas de codificacion
 - Modificar la interfaz de usuario para usar las nuevas funciones
 
 ### Aspectos a tener en cuenta
@@ -36,12 +36,8 @@
 
 ### Parte B
 
-5. Ejecute el linter con `npm run lint` para eliminar errores y warnings.
-6. Subir un issue 'Parte B' con un screenshot de la terminal del linter sin detectar problemas de código.
-
-### Parte C
-
-7. Agregar elementos a la intefaz de usuario para usar las nuevas funciones.
+5. Agregar elementos a la intefaz de usuario para usar las nuevas funciones.
    - Campo 'Palabras' en el panel 'Nuevo libro'.
    - Mostrar 'Palabras totales' en el panel 'Biblioteca'.
-8. Subir un issue 'Parte C' con screenshot de la página en el navegador (paneles Biblioteca, Nuevo libro e Inventario).
+6. Modificar el panel 'Inventario' para mostrar cada libro en un componente `card` de Bootstrap. Usar el título del libro como título en cada card, en el cuerpo mostrar: autor y número de páginas.
+7. Subir un issue 'Parte B' con screenshot de la página en el navegador (paneles Biblioteca, Nuevo libro e Inventario).
