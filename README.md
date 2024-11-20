@@ -24,6 +24,7 @@
 ### Parte A
 
 1. En la clase `Book` agegar el campo `words`
+
 - representa el número de palabras del libro
 - el campo no es obligatorio y debe ser un número
 
@@ -32,8 +33,9 @@ Implementar las funciones `getWords()` y `setWords()` validando que el parámetr
 Modificar la función `toString()` agregando el valor del campo.
 
 Codificar los test unitarios para las nuevas funciones
-   - incluir test para casos de error
-   - la cobertura del test unitario debe alcanzar el 100%
+
+- incluir test para casos de error
+- la cobertura del test unitario debe alcanzar el 100%
 
 2. En la clase `Book` implementar la función `wordsPerPage()` que retorna el promedio de palabras por página del libro.
    Codificar test unitarios para la función `wordsPerPage()`.
@@ -48,7 +50,6 @@ Subir un issue 'Parte A' con un screenshot de la terminal con el resumen de los 
 4. Agregar elementos a la intefaz de usuario para usar las nuevas funciones.
    - campo 'Palabras' en el panel 'Nuevo libro'
    - mostrar 'Palabras totales' en el panel 'Biblioteca'
-     
 5. Modificar el panel 'Inventario' para mostrar cada libro en un componente `card` de Bootstrap.
    - usar el título del libro como título en cada card
    - en el cuerpo del card mostrar: autor y número de páginas
