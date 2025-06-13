@@ -2,7 +2,6 @@ class Book {
   #title;
   #author;
   #pages;
-  // #words;
 
   constructor(title, author, pages) {
     this.setTitle(title);
