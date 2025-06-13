@@ -40,7 +40,7 @@ Codificar los test unitarios para las nuevas funciones
 2. En la clase `Book` implementar la función `averagePagesPerChapter()` que retorna el promedio de páginas por capítulo del libro.
    Codificar test unitarios para la función `averagePagesPerChapter()`.
 
-3. En la clase `Library` implementar la función `averageChaptersPerBook()` que suma el total de palabras de los libros de la biblioteca.
+3. En la clase `Library` implementar la función `averageChaptersPerBook()` que retorna el promedio de capítulos de los libros de la biblioteca.
    Codificar test unitarios para la función `averageChaptersPerBook()`.
 
 Subir un issue 'Parte A' con un screenshot de la terminal con el resumen de los tests unitarios y cobertura.
