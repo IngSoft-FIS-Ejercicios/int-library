@@ -22,7 +22,7 @@ class Book {
     return this.#pages;
   }
 
-  getWords() {
+  getChapters() {
     // TODO
   }
 
@@ -59,11 +59,11 @@ class Book {
     this.#pages = pages;
   }
 
-  setWords() {
+  setChapters() {
     // TODO
   }
 
-  wordsPerPage() {
+  averagePagesPerChapter() {
     // TODO
   }
 

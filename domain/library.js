@@ -3,8 +3,6 @@ import Book from "./book.js";
 class Library {
   #name;
   #inventory = [];
-  // #totalWords;
-  // #wordCount;
 
   constructor(name) {
     this.setName(name);
@@ -38,7 +36,7 @@ class Library {
     return this.#inventory.length;
   }
 
-  totalWords() {
+  averageChaptersPerBook() {
     // TODO
   }
 }
