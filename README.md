@@ -23,7 +23,7 @@
 
 ### Parte A
 
-1. En la clase `Book` agegar el campo `chapters`
+1. En la clase `Book` agregar el campo `chapters`
 
 - representa el número de capítulos del libro
 - el campo debe ser un número entero, mínimo 0 y máximo 500
