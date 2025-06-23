@@ -26,7 +26,7 @@
 1. En la clase `Book` agregar el campo `chapters`
 
 - representa el número de capítulos del libro
-- el campo debe ser un número entero, mínimo 0 y máximo 500
+- el campo debe ser un número entero, mínimo 1 y máximo 500
 
 Implementar las funciones `getChapters()` y `setChapters()` validando que el parámetro recibido es un número.
 
