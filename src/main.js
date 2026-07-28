@@ -24,7 +24,7 @@ function updateInventory() {
 
   const addedBook =
     myLibrary.getInventory()[myLibrary.getInventory().length - 1];
-  let newListElement = document.createElement("li");
+  const newListElement = document.createElement("li");
   newListElement.classList.add("list-group-item");
   newListElement.innerText = addedBook.toString();
   bookList.appendChild(newListElement);
