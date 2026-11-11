@@ -1,5 +1,21 @@
 # Ejercicio Library
 
+## Cómo levantar el proyecto
+
+1. Realizar un fork de este repositorio desde GitHub.
+2. Clonar el fork y entrar en la carpeta del proyecto.
+3. Instalar las dependencias:
+
+   ```bash
+   npm install
+   ```
+
+4. Iniciar el servidor de desarrollo:
+
+   ```bash
+   npm run dev
+   ```
+
 ## Objetivos
 
 - Implementar nuevas funciones de lógica de dominio
@@ -32,7 +48,7 @@ Implementar las funciones `getChapters()` y `setChapters()` validando que el par
 
 Modificar la función `toString()` agregando el valor del campo.
 
-Codificar los test unitarios para las nuevas funciones
+Codificar los test unitarios para las nuevas funciones y las ya existentes que se encuentren sin cubrir.
 
 - incluir test para casos de error
 - la cobertura del test unitario debe alcanzar el 100%
@@ -43,15 +59,34 @@ Codificar los test unitarios para las nuevas funciones
 3. En la clase `Library` implementar la función `averageChaptersPerBook()` que retorna el promedio de capítulos de los libros de la biblioteca.
    Codificar test unitarios para la función `averageChaptersPerBook()`.
 
+4. Ejecutar el linter y verificar que no existan errores o advertencias.
+
 Subir un issue 'Parte A' con un screenshot de la terminal con el resumen de los tests unitarios y cobertura.
 
 ### Parte B
 
-4. Agregar elementos a la intefaz de usuario para usar las nuevas funciones.
+5. Agregar elementos a la intefaz de usuario para usar las nuevas funciones.
    - campo 'Capítulos' en el panel 'Nuevo libro'
    - mostrar 'Promedio capítulos por libro' en el panel 'Biblioteca'
-5. Modificar el panel 'Inventario' para mostrar cada libro en un componente `card` de Bootstrap.
+6. Modificar el panel 'Inventario' para mostrar cada libro en un componente `card` de Bootstrap.
    - usar el título del libro como título en cada card
    - en el cuerpo del card mostrar: autor, número de capítulos, número de páginas
+7. Agregarle la clase de Bootstrap `form-control` a todos los inputs.
+8. Ejecutar el linter y verificar que no existan errores o advertencias.
+
 
 Subir un issue 'Parte B' con screenshot de la página en el navegador (paneles Biblioteca, Nuevo libro e Inventario).
+
+
+### Parte Extra
+
+- Resuelve problemas de accesibilidad con WAVE
+
+### Referencias y recursos útiles
+
+- [ESLint](https://eslint.org/docs/latest/rules/)
+- [Prettier](https://prettier.io/docs/)
+- [TypeScript](https://www.typescriptlang.org/docs/)
+- [Vitest](https://vitest.dev/guide/)
+- [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+- [HTML](https://www.w3schools.com/html/)

@@ -1,72 +1,70 @@
 class Book {
-  #title;
-  #author;
-  #pages;
+  #title!: string;
+  #author!: string;
+  #pages!: number;
 
-  constructor(title, author, pages) {
+  constructor(title: string, author: string, pages: number) {
     this.setTitle(title);
     this.setAuthor(author);
     this.setPages(pages);
   }
 
-  getTitle() {
+  getTitle(): string {
     return this.#title;
   }
 
-  getAuthor() {
+  getAuthor(): string {
     return this.#author;
   }
 
-  getPages() {
+  getPages(): number {
     return this.#pages;
   }
 
-  getChapters() {
+  getChapters(): number | undefined {
     // TODO
+    return undefined;
   }
 
-  setTitle(title) {
+  setTitle(title: string): void {
     if (typeof title !== "string") {
       throw new Error();
     }
-    title = title.trim();
-    if (title.length === 0) {
+    const trimmedTitle = title.trim();
+    if (trimmedTitle.length === 0) {
       throw new Error("El libro debe tener título");
     }
-    this.#title = title;
+    this.#title = trimmedTitle;
   }
 
-  setAuthor(author) {
+  setAuthor(author: string): void {
     if (typeof author !== "string") {
       throw new Error();
     }
-    author = author.trim();
-    if (author.length === 0) {
-      author = "Anónimo";
-    }
-    this.#author = author;
+    const trimmedAuthor = author.trim();
+    this.#author = trimmedAuthor.length === 0 ? "Anónimo" : trimmedAuthor;
   }
 
-  setPages(pages) {
+  setPages(pages: number): void {
     if (typeof pages !== "number" || isNaN(pages)) {
       throw new Error("El libro debe tener al menos una página");
     }
     if (pages < 1) {
       throw new Error("El libro debe tener al menos una página");
     }
-    pages = Math.trunc(pages);
-    this.#pages = pages;
+    this.#pages = Math.trunc(pages);
   }
 
-  setChapters() {
+  setChapters(): void {
     // TODO
   }
 
-  averagePagesPerChapter() {
+  averagePagesPerChapter(): number | undefined {
     // TODO
+    return undefined;
   }
 
-  toString() {
+  toString(): string {
     return `Título: ${this.#title} Autor: ${this.#author} Páginas: ${this.#pages}`;
   }
 }
